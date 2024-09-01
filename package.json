@@ -8,7 +8,8 @@
     "prepare": "husky install",
     "lint": "npm run lint-eslint && npm run lint-stylelint",
     "lint-eslint": "eslint -c .eslintrc.js --ext .ts,.tsx,.js src",
-    "lint-stylelint": "stylelint --config .stylelintrc.js src/**/*.{less,css,scss}"
+    "lint-stylelint": "stylelint --config .stylelintrc.js src/**/*.{less,css,scss}",
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,8 @@
     "@commitlint/config-conventional": "^19.4.1",
     "@typescript-eslint/eslint-plugin": "^8.3.0",
     "@typescript-eslint/parser": "^8.3.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.35.0",
@@ -51,5 +54,10 @@
     "*.{ts,tsx,js,js,json,html,yml,css,less,scss,md}": [
       "prettier --write"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
