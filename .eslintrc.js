@@ -12,6 +12,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
+    'prettier', // 禁用与prettier冲突的规则  'prettier' 及之后的配置要放到原来添加的配置的后面，这样才能让 prettier 禁用之后与其冲突的规则
   ],
   settings: {
     react: {
