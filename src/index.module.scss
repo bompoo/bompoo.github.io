@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  width: 100px;
+
+  .child {
+    height: 100px;
+  }
+}
+
+#root {
+  background-color: red;
+}
+
+#go {
+  background-color: white;
+}
+
+body {
+  background-color: aqua;
+}

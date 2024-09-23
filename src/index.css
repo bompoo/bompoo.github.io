@@ -1,8 +1,0 @@
-.container {
-  display: flex;
-  width: 100px;
-
-  .child {
-    height: 100px;
-  }
-}
